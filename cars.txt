@@ -6,38 +6,37 @@ riguardanti delle auto usate messe in vendita da un concessionario.
 
 Nome tabella: cars
 
-id => intero => SMALLINT
-tipo_di_veicolo => stringa => VARCHAR(30)
-tipo_di_utilizzo => stringa => VARCHAR(10)
-marca => strina => VARCHAR(20)
-modello => string => VARCHAR(50)
-anno => intero => YEAR
-colore => stringa => VARCHAR(15)
-porte => intero => TINYINT
-posti => intero => TINYINT
-cambio => stringa => VARCHAR(20)
-trazione => stringa => VARCHAR(30)
-alimentazione => stringa => VARCHAR(10)
-cilindrata => intero => SMALLINT
-cavalli_fiscali => stringa => VARCHAR(10)
-data_immatricolazione => intero => DATE
-data_acquisto => intero => DATE
-classificazione_euro => stringa => VARCHAR(10)
-capacità_serbatoio => stringa => VARCHAR(5)
-abs => boolean => TINYINT
-aria_condizionata => boolean => TINYINT
-controllo_mantenimento_corsia => boolean => TINYINT
-frenata_automatica => boolean => TINYINT
-cruise_control => boolean => TINYINT
-controllo_automatica_velocità => boolean => TINYINT
-avviso_cambio_corsia => boolean => TINYINT
-sensori_parcheggio => boolean => TINYINT
-telecamera => boolean => TINYINT
-android_auto => boolean => TINYINT
-apple_carplay => boolean => TINYINT
-cerchi_in_lega => boolean => TINYINT
-disponibilità => intero => TINYINT
-targa => stringa => VARCHAR(7)
-chilometri_attuali => float => FLOAT(6,3)
-promozione => intero => TINYINT
-prezzo_di_vendita => float => FLOAT(5,3)
+id => intero => SMALLINT => PRIMARY_KEY => AUTO_INCREMENT
+tipo_di_veicolo => stringa => VARCHAR(30) => NOTNULL
+marca => strina => VARCHAR(20) => NOTNULL
+modello => string => VARCHAR(50) => NOTNULL
+anno => intero => YEAR => NOTNULL
+colore => stringa => VARCHAR(15) => NOTNULL
+porte => intero => TINYINT => NOTNULL
+posti => intero => TINYINT => NOTNULL
+cambio => stringa => VARCHAR(20) => NOTNULL
+trazione => stringa => VARCHAR(30) => NOTNULL
+alimentazione => stringa => VARCHAR(10) => NOTNULL
+cilindrata => intero => SMALLINT => NOTNULL
+cavalli_fiscali => stringa => VARCHAR(10) => NOTNULL
+data_immatricolazione => intero => DATE => NOTNULL
+data_acquisto => intero => DATE => NOTNULL
+classificazione_euro => stringa => VARCHAR(10) => NULL
+capacità_serbatoio => stringa => VARCHAR(5) => NOTNULL
+abs => boolean => TINYINT => NOTNULL
+aria_condizionata => boolean => TINYINT => NOTNULL
+controllo_mantenimento_corsia => boolean => TINYINT => NOTNULL
+frenata_automatica => boolean => TINYINT => NOTNULL
+cruise_control => boolean => TINYINT => NOTNULL
+controllo_automatica_velocità => boolean => TINYINT => NOTNULL
+avviso_cambio_corsia => boolean => TINYINT => NOTNULL
+sensori_parcheggio => boolean => TINYINT => NOTNULL
+telecamera => boolean => TINYINT => NOTNULL
+android_auto => boolean => TINYINT => NULL
+apple_carplay => boolean => TINYINT => NULL
+cerchi_in_lega => boolean => TINYINT => NOTNULL
+disponibilità => intero => TINYINT => DEFAULT(0) => NOTNULL
+targa => stringa => VARCHAR(7) => UNIQUE
+chilometri_attuali => float => FLOAT(6,3) => NOTNULL
+promozione => intero => TINYINT => NULL
+prezzo_di_vendita => float => FLOAT(5,3) => NOTNULL

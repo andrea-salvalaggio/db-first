@@ -4,3 +4,26 @@ riguardanti delle auto usate messe in vendita da un concessionario.
 
 
 Nome tabella: cars
+
+id
+tipo_di_veicolo
+tipo_di_utilizzo
+marca
+modello
+anno
+colore
+porte
+posti
+cambio
+trazione
+alimentazione
+cilindrata
+cavalli_fiscali
+immatricolazione
+classificazione_euro
+capacità_serbatoio
+pacchetto_equipaggiamento
+disponibilità
+chilometri
+promozione
+prezzo
